@@ -9,7 +9,7 @@ body {
 .navbar {
     display: flex;
     justify-content: space-between;
-    padding: 20px 40px;
+    padding: 20px;
     background: #8B0000;
 }
 
@@ -38,18 +38,6 @@ body {
     display: block;
 }
 
-/* GRID */
-.grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-}
-
-.full {
-    width: 100%;
-}
-
 /* PROFILE */
 .profile {
     width: 140px;
@@ -57,52 +45,45 @@ body {
 }
 
 /* TEXT */
-.glow {
-    font-size: 36px;
-    color: red;
-}
-
-.tagline {
-    margin-top: 10px;
-    font-weight: 500;
-}
-
-.intro {
-    max-width: 700px;
-    margin: 20px auto;
-    line-height: 1.6;
-}
-
-/* HEADINGS */
 .heading {
     font-family: 'Playfair Display', serif;
     color: red;
 }
 
-/* CARDS */
+.tagline {
+    margin-top: 10px;
+}
+
+.intro {
+    max-width: 700px;
+    margin: 20px auto;
+}
+
+/* CARDS LAYOUT */
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
 .card, .edu-card {
     background: #111;
     padding: 20px;
     border-radius: 10px;
-    width: 260px;
-    transition: 0.3s;
-}
-
-.card:hover, .edu-card:hover {
-    transform: translateY(-5px);
+    width: 250px;
 }
 
 .edu-card img {
     width: 70px;
 }
 
-/* LINKS */
+/* BUTTON */
 a {
     background: red;
     color: white;
-    padding: 10px 20px;
+    padding: 10px;
     border-radius: 5px;
-    text-decoration: none;
 }
 
 /* LIGHT MODE */
@@ -111,17 +92,8 @@ a {
     color: black;
 }
 
-.light-mode .navbar {
-    background: #ff4d4d;
-}
-
 .light-mode .card,
 .light-mode .edu-card {
     background: #eee;
     color: black;
-}
-
-.light-mode a {
-    background: black;
-    color: white;
 }
