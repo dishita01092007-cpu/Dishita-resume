@@ -9,82 +9,124 @@ body {
 .navbar {
     display: flex;
     justify-content: space-between;
-    padding: 15px 30px;
+    padding: 20px 40px;
     background: #8B0000;
+    box-shadow: 0 0 20px red;
 }
 
 .navbar button {
     background: none;
     border: none;
     color: white;
-    margin-left: 10px;
+    margin-left: 15px;
     cursor: pointer;
+    transition: 0.3s;
 }
 
-.active-btn {
-    background: white;
+.navbar button:hover {
     color: black;
+    background: white;
+    padding: 5px 10px;
     border-radius: 5px;
 }
 
 /* SECTIONS */
 .section {
     display: none;
-    padding: 60px 20px;
+    padding: 60px;
+    text-align: center;
 }
 
 .active {
     display: block;
 }
 
-/* CENTER */
-.center {
-    text-align: center;
+/* ANIMATION */
+.fade-in {
+    animation: fade 0.6s ease-in;
 }
 
-/* TEXT */
+@keyframes fade {
+    from {opacity: 0; transform: translateY(20px);}
+    to {opacity: 1; transform: translateY(0);}
+}
+
+/* PROFILE */
+.profile {
+    width: 150px;
+    border-radius: 50%;
+    border: 3px solid red;
+    box-shadow: 0 0 20px red;
+}
+
+/* NAME */
 .glow {
+    font-size: 40px;
     color: red;
-    font-size: 36px;
+    text-shadow: 0 0 10px red, 0 0 20px red;
 }
 
+/* INTRO */
+.intro {
+    margin-top: 20px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.6;
+}
+
+/* HEADINGS */
 .heading {
     font-family: 'Playfair Display', serif;
     color: red;
 }
 
-.intro {
-    max-width: 700px;
-    margin: 20px auto;
-    line-height: 1.6;
+/* EDUCATION */
+.edu-card {
+    background: #111;
+    padding: 20px;
+    margin: 15px auto;
+    border-radius: 10px;
+    width: 260px;
+    transition: 0.3s;
+}
+
+.edu-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px red;
+}
+
+.edu-card img {
+    width: 80px;
 }
 
 /* CARDS */
-.cards-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-}
-
-.card, .edu-card {
+.card {
     background: #111;
-    padding: 20px;
+    padding: 15px;
+    margin: 10px auto;
+    width: 300px;
     border-radius: 10px;
-    width: 260px;
+    transition: 0.3s;
 }
 
-/* IMAGE */
-.edu-card img {
-    width: 70px;
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px red;
 }
 
-/* BUTTON */
+/* LINKS */
 a {
+    padding: 10px 20px;
     background: red;
     color: white;
-    padding: 10px 20px;
     border-radius: 5px;
+    text-decoration: none;
+}
+
+a:hover {
+    background: white;
+    color: black;
 }
 
 /* LIGHT MODE */
@@ -93,8 +135,26 @@ a {
     color: black;
 }
 
+.light-mode .navbar {
+    background: #ff4d4d;
+}
+
 .light-mode .card,
 .light-mode .edu-card {
-    background: #eee;
+    background: #f2f2f2;
     color: black;
+}
+
+.light-mode a {
+    background: black;
+    color: white;
+}
+
+.light-mode .heading {
+    color: #8B0000;
+}
+
+.light-mode .glow {
+    color: black;
+    text-shadow: none;
 }
