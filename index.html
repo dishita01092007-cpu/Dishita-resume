@@ -9,6 +9,9 @@
 
 <body>
 
+<!-- LOADING SCREEN -->
+<div id="loader">Loading...</div>
+
 <!-- NAVBAR -->
 <div class="navbar">
     <h2>Dishita Agarwal</h2>
@@ -24,28 +27,25 @@
 </div>
 
 <!-- HOME -->
-<section id="home" class="section active">
+<section id="home" class="section active center">
     <img src="profile.jpg" class="profile">
     <h1 id="typing"></h1>
 
     <p class="tagline">Aspiring Business Leader | Finance Enthusiast | Creative Thinker</p>
 
     <p class="intro">
-        My name is Dishita Agarwal, and I am a student of the Bachelor of Business Administration (BBA) program. I am from Jaipur
-        and have a commerce background with a solid foundation in business, economics, and management. I possess a strong work
-        ethic, a keen eye for detail, and effective communication and analytical skills. I am presently eagerly waiting to apply my
-        knowledge in a corporate environment and contribute meaningfully.
+        My name is Dishita Agarwal, and I am a student of the Bachelor of Business Administration (BBA) program...
     </p>
 </section>
 
 <!-- RESUME -->
-<section id="resume" class="section">
+<section id="resume" class="section center">
     <h2 class="heading">Resume</h2>
     <a href="resume.pdf" target="_blank">View Resume</a>
 </section>
 
 <!-- EDUCATION -->
-<section id="education" class="section">
+<section id="education" class="section center">
     <h2 class="heading">Education</h2>
 
     <div class="cards-container">
@@ -70,70 +70,45 @@
 </section>
 
 <!-- EXPERIENCE -->
-<section id="experience" class="section">
+<section id="experience" class="section center">
     <h2 class="heading">Experience</h2>
 
     <div class="cards-container">
-        <div class="card">
-            <b>A-Quant (2025 - Present)</b>
-            <p>Financial Research Analyst</p>
-            <p>Conduct secondary research on companies and industry trends.</p>
-        </div>
-
-        <div class="card">
-            <b>Team Sponsorship (2025 - Present)</b>
-            <p>Working Committee Member</p>
-            <p>Assisting in sponsor coordination.</p>
-        </div>
-
-        <div class="card">
-            <b>Finometricss (2025 - Present)</b>
-            <p>Design Team Member</p>
-            <p>Worked on magazine for 20,000+ readers.</p>
-        </div>
-
-        <div class="card">
-            <b>Arogya Foundation (Internship)</b>
-            <p>Nov - Feb 2025</p>
-            <p>Planned trips and engaged with communities.</p>
-        </div>
-
-        <div class="card">
-            <b>Student Council (2021-2025)</b>
-            <p>House Captain</p>
-            <p>Led academic & co-curricular teams.</p>
-        </div>
+        <div class="card">A-Quant (2025 - Present)<br>Financial Research Analyst</div>
+        <div class="card">Team Sponsorship (2025 - Present)</div>
+        <div class="card">Finometricss (2025 - Present)</div>
+        <div class="card">Arogya Foundation Internship</div>
+        <div class="card">Student Council (2021-2025)</div>
     </div>
 </section>
 
 <!-- ACHIEVEMENTS -->
-<section id="achievements" class="section">
+<section id="achievements" class="section center">
     <h2 class="heading">Achievements</h2>
 
     <div class="cards-container">
-        <div class="card">Ranked 4th nationally in TGELF Trade Challenge by FedEx</div>
-        <div class="card">Best Delegate (4x), High Commendation, Special Mention – MUN</div>
-        <div class="card">Picasso Award – National Painting Contest</div>
-        <div class="card">2nd Place – RIEDU Painting Contest</div>
-        <div class="card">2nd Rank – Brainvita Abacus</div>
-        <div class="card">Participant – Samsung Solve for Tomorrow</div>
-        <div class="card">State-level Painting Qualifier</div>
-        <div class="card">High Commendation – Goonj Fest</div>
-        <div class="card">Exhibitor – Khula Aasmaan</div>
-        <div class="card">Participant – Bharat Quiz</div>
-        <div class="card">1st Prize – Shark Pals</div>
+        <div class="card">Ranked 4th nationally – TGELF</div>
+        <div class="card">Best Delegate (4x) – MUN</div>
+        <div class="card">Picasso Award</div>
+        <div class="card">2nd Place – RIEDU</div>
+        <div class="card">Brainvita Rank 2</div>
+        <div class="card">Samsung Solve for Tomorrow</div>
+        <div class="card">State-level Painting</div>
+        <div class="card">Goonj Fest</div>
+        <div class="card">Khula Aasmaan</div>
+        <div class="card">Bharat Quiz</div>
+        <div class="card">1st Prize Shark Pals</div>
     </div>
 </section>
 
 <!-- CONTACT -->
-<section id="contact" class="section">
+<section id="contact" class="section center">
     <h2 class="heading">Contact</h2>
     <p>📞 7014326632</p>
     <p>📧 dishita.agarwal25@iimb.ac.in</p>
 </section>
 
 <script>
-// FIXED SECTION SWITCHING
 function showSection(id, btn) {
     document.querySelectorAll(".section").forEach(s => s.classList.remove("active"));
     document.getElementById(id).classList.add("active");
@@ -142,12 +117,11 @@ function showSection(id, btn) {
     if(btn) btn.classList.add("active-btn");
 }
 
-// DARK MODE
 function toggleMode() {
     document.body.classList.toggle("light-mode");
 }
 
-// TYPING EFFECT
+// typing
 let text = "Hi, I'm Dishita Agarwal";
 let i = 0;
 function type() {
@@ -158,6 +132,11 @@ function type() {
     }
 }
 type();
+
+// loader
+window.onload = function() {
+    document.getElementById("loader").style.display = "none";
+}
 </script>
 
 </body>

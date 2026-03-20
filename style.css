@@ -5,11 +5,26 @@ body {
     color: white;
 }
 
+/* LOADER */
+#loader {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    z-index: 999;
+}
+
 /* NAVBAR */
 .navbar {
     display: flex;
     justify-content: space-between;
-    padding: 20px;
+    align-items: center;
+    padding: 15px 30px;
     background: #8B0000;
 }
 
@@ -30,17 +45,24 @@ body {
 /* SECTIONS */
 .section {
     display: none;
-    padding: 60px;
-    text-align: center;
+    padding: 60px 20px;
 }
 
 .active {
     display: block;
 }
 
+/* CENTER EVERYTHING */
+.center {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 /* PROFILE */
 .profile {
-    width: 140px;
+    width: 150px;
     border-radius: 50%;
 }
 
@@ -57,21 +79,24 @@ body {
 .intro {
     max-width: 700px;
     margin: 20px auto;
+    line-height: 1.6;
 }
 
-/* CARDS LAYOUT */
+/* CARDS */
 .cards-container {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 20px;
+    margin-top: 20px;
 }
 
 .card, .edu-card {
     background: #111;
     padding: 20px;
     border-radius: 10px;
-    width: 250px;
+    width: 260px;
+    text-align: center;
 }
 
 .edu-card img {
@@ -82,7 +107,7 @@ body {
 a {
     background: red;
     color: white;
-    padding: 10px;
+    padding: 10px 20px;
     border-radius: 5px;
 }
 
