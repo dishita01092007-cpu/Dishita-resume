@@ -9,9 +9,6 @@
 
 <body>
 
-<!-- LOADING SCREEN -->
-<div id="loader">Loading...</div>
-
 <!-- NAVBAR -->
 <div class="navbar">
     <h2>Dishita Agarwal</h2>
@@ -28,13 +25,13 @@
 
 <!-- HOME -->
 <section id="home" class="section active center">
-    <img src="profile.jpg" class="profile">
-    <h1 id="typing"></h1>
-
-    <p class="tagline">Aspiring Business Leader | Finance Enthusiast | Creative Thinker</p>
+    <h1 class="glow">Dishita Agarwal</h1>
 
     <p class="intro">
-        My name is Dishita Agarwal, and I am a student of the Bachelor of Business Administration (BBA) program...
+        My name is Dishita Agarwal, and I am a student of the Bachelor of Business Administration (BBA) program. I am from Jaipur
+        and have a commerce background with a solid foundation in business, economics, and management. I possess a strong work
+        ethic, a keen eye for detail, and effective communication and analytical skills. I am presently eagerly waiting to apply my
+        knowledge in a corporate environment and be proactive in contributing to the world meaningfully.
     </p>
 </section>
 
@@ -74,11 +71,37 @@
     <h2 class="heading">Experience</h2>
 
     <div class="cards-container">
-        <div class="card">A-Quant (2025 - Present)<br>Financial Research Analyst</div>
-        <div class="card">Team Sponsorship (2025 - Present)</div>
-        <div class="card">Finometricss (2025 - Present)</div>
-        <div class="card">Arogya Foundation Internship</div>
-        <div class="card">Student Council (2021-2025)</div>
+
+        <div class="card">
+            <b>A-Quant (2025 - Present)</b>
+            <p>Financial Research Analyst</p>
+            <p>Conduct secondary research on companies and industry trends.</p>
+        </div>
+
+        <div class="card">
+            <b>Team Sponsorship (2025 - Present)</b>
+            <p>Working Committee Member</p>
+            <p>Assisting in identifying, approaching, and coordinating with sponsors.</p>
+        </div>
+
+        <div class="card">
+            <b>Finometricss (2025 - Present)</b>
+            <p>Design Team Member</p>
+            <p>Contributed to magazine for 20,000+ readers.</p>
+        </div>
+
+        <div class="card">
+            <b>Arogya Foundation Internship</b>
+            <p>Nov - Feb 2025</p>
+            <p>Planned trips and engaged with children and farmers.</p>
+        </div>
+
+        <div class="card">
+            <b>Student Council (2021-2025)</b>
+            <p>House Captain</p>
+            <p>Led teams in academic and co-curricular activities.</p>
+        </div>
+
     </div>
 </section>
 
@@ -87,17 +110,19 @@
     <h2 class="heading">Achievements</h2>
 
     <div class="cards-container">
-        <div class="card">Ranked 4th nationally – TGELF</div>
-        <div class="card">Best Delegate (4x) – MUN</div>
-        <div class="card">Picasso Award</div>
-        <div class="card">2nd Place – RIEDU</div>
-        <div class="card">Brainvita Rank 2</div>
-        <div class="card">Samsung Solve for Tomorrow</div>
-        <div class="card">State-level Painting</div>
-        <div class="card">Goonj Fest</div>
-        <div class="card">Khula Aasmaan</div>
-        <div class="card">Bharat Quiz</div>
-        <div class="card">1st Prize Shark Pals</div>
+
+        <div class="card">Ranked 4th nationally in TGELF International Trade Challenge by FedEx</div>
+        <div class="card">Best Delegate (4x), High Commendation (1), Special Mention (2)</div>
+        <div class="card">Picasso Award of Excellence – National Painting Contest</div>
+        <div class="card">2nd Place – RIEDU International Painting Contest</div>
+        <div class="card">2nd Rank – Brainvita Abacus Competition</div>
+        <div class="card">Participant – Solve for Tomorrow by Samsung</div>
+        <div class="card">State-level qualifier – Painting Competition</div>
+        <div class="card">High Commendation – Goonj Cultural Fest</div>
+        <div class="card">Exhibitor – Khula Aasmaan Competition</div>
+        <div class="card">Participant – Bharat Quiz</div>
+        <div class="card">1st Prize – Shark Pals Competition</div>
+
     </div>
 </section>
 
@@ -119,23 +144,6 @@ function showSection(id, btn) {
 
 function toggleMode() {
     document.body.classList.toggle("light-mode");
-}
-
-// typing
-let text = "Hi, I'm Dishita Agarwal";
-let i = 0;
-function type() {
-    if (i < text.length) {
-        document.getElementById("typing").innerHTML += text.charAt(i);
-        i++;
-        setTimeout(type, 70);
-    }
-}
-type();
-
-// loader
-window.onload = function() {
-    document.getElementById("loader").style.display = "none";
 }
 </script>
 

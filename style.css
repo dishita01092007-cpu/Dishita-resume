@@ -5,25 +5,10 @@ body {
     color: white;
 }
 
-/* LOADER */
-#loader {
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    background: black;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 30px;
-    z-index: 999;
-}
-
 /* NAVBAR */
 .navbar {
     display: flex;
     justify-content: space-between;
-    align-items: center;
     padding: 15px 30px;
     background: #8B0000;
 }
@@ -52,28 +37,20 @@ body {
     display: block;
 }
 
-/* CENTER EVERYTHING */
+/* CENTER */
 .center {
     text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-/* PROFILE */
-.profile {
-    width: 150px;
-    border-radius: 50%;
 }
 
 /* TEXT */
+.glow {
+    color: red;
+    font-size: 36px;
+}
+
 .heading {
     font-family: 'Playfair Display', serif;
     color: red;
-}
-
-.tagline {
-    margin-top: 10px;
 }
 
 .intro {
@@ -85,10 +62,9 @@ body {
 /* CARDS */
 .cards-container {
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
+    justify-content: center;
     gap: 20px;
-    margin-top: 20px;
 }
 
 .card, .edu-card {
@@ -96,9 +72,9 @@ body {
     padding: 20px;
     border-radius: 10px;
     width: 260px;
-    text-align: center;
 }
 
+/* IMAGE */
 .edu-card img {
     width: 70px;
 }
